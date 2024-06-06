@@ -1,7 +1,7 @@
 import {createWebHistory, createRouter} from 'vue-router';
 
 import HomePage from '@/components/HomePage';
-import PatientDashboard from './components/Patient/PatientDashboard.vue';
+import PatientDashboard from '@/components/Patient/PatientDashboard.vue';
 
 // Add other components here (SearchPsychologist, AppointmentBooking, etc.)
 

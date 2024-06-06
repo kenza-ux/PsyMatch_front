@@ -57,7 +57,14 @@ export default {
 
     },
     onLogin() {
-      // Code de connexion à l'application (en fonction du profil sélectionné)
+      if (this.selectedProfile === 'patient') {
+        this.$router.push('/Patient/patientdashboard');
+      } else if (this.selectedProfile === 'psychologist') {
+        // Redirection ou logique de connexion pour les psychologues
+        alert("Login pour psychologue n'est pas encore implémenté.");
+      } else {
+        alert("Veuillez sélectionner un profil.");
+      }
     },
     onSignup() {
       // Redirection vers la page "Authentification"
